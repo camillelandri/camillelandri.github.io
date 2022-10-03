@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Camille Landri - Stellar collisions</title>
+    </head>
+    
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html#home" class="nav__logo">Camille Landri</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="index.html#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#research" class="nav__link"> 
+                                <i class="uil uil-books nav__icon"></i> Research
+                            </a>
+                        <li class="nav__item">
+                            <a href="index.html#publications" class="nav__link"> 
+                                <i class="uil uil-books nav__icon"></i> Publications
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change buttom -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="research section" id="research">
+            <h2 class="section__title">Stellar collisions</h2>
+            <span class="section__tab"></span>
+            <div class="research__container container grid">
+                <div class="research__description">
+                    <img src="assets/img/neutron.webp" alt="" class="research__img_l">
+                    When two stars cross paths and end up colliding, they will expell material which
+                    will later interact with the radiation from the collision product. This 
+                    interaction will lead to a brightness increase, which I wish to quantify
+                    by simulating different stellar collisions. <br><br>
+                    In order to predict these transients, I first need to simulate the collisions to
+                    obtain the amount of mass ejected. I will then use this mass as input into a Radiative
+                    Hydrodynamic code to study how the radiation emitted by the collision product
+                    will interact with the ejected matter.<br> <br>
+                    <img src="assets/img/merger.gif" alt="" class="research__img_r">
+                    For the first part of this project, I am modelling the collision with <a href="https://phantomsph.bitbucket.io/" class="links">Phantom</a>, a Smoothed 
+                    Particle Hydrodynamics (SPH) code. SPH is a technique that discretises the hydrodynamic equations:
+                    it approximates a hydrodynamical system as a collection of particles (a more classical approach would be 
+                    to simulate a fluid evolving in a grid). 
+                    Each particle has its own properties (position, velocity, energy, etc) and one can interpolate 
+                    the variables of interest (e.g. density) to visualise the behaviour of the fluid(s). 
+                    While this process has many 
+                    downsides, it is a good approximation in highly dynamical contexts, like stellar 
+                    collisions, which can be computationally expensive in 3D grid-based Hydrodynamic codes.
+                </div>
+            </div>
+        </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Camille Landri</h1>
+                        <a href="https://orcid.org/0000-0001-8078-0905" class="footer__subtitle">My ORCiD</a>
+                        <div class="footer__socials">
+                            <a href="https://www.linkedin.com/in/camille-landri-b542b3178/" target="blank" class="footer__social">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <a href="https://twitter.com/hebouille" target="blank" class="footer__social">
+                                <i class="uil uil-twitter-alt"></i>
+                            </a>
+
+                            <a href="https://github.com/HebiBS" target="blank" class="footer__social">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="index.html#research" class="footer__link">research</a>
+                        </li>
+                        <li>
+                            <a href="index.html#publications" class="footer__link">publications</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact" class="footer__link">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <p class="footer__copy">&#169; Camille Landri. All rights reserved</p>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-angle-double-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
