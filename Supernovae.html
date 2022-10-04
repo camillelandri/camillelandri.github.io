@@ -24,7 +24,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="index.html#home" class="nav__link active-link">
+                            <a href="index.html#home" class="nav__link ">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="index.html#research" class="nav__link"> 
+                            <a href="index.html#research" class="nav__link active-link"> 
                                 <i class="uil uil-books nav__icon"></i> Projects
                             </a>
                         <li class="nav__item">
@@ -68,11 +68,12 @@
             <span class="section__tab"></span>
             <div class="research__container container grid">
                 <div class="research__description">
-                    <img src="assets/img/SN.jpg" alt="" class="research__img_r">
                     Supernovae (SNe) are the endpoint of stellar evolution. Despite being extensively studied,
                     these events are still not well understood. Stars with different masses evolve 
-                    differently, therefore the nature of a SN depends on the characteristic of the
+                    differently, and the nature of a SN depends on the characteristic of the
                     dying star (or <em>progenitor</em>). <br>
+
+                    <img src="assets/img/SN.jpg" alt="" class="research__img_l">
                     I am mostly interested in the case of relatively light stars. They will evolve into a white dwarf (WD),
                     and will eventually undergo a thermonuclear explosion once they reach a critical mass. 
                     This sort of event is called a Type Ia SN. Since the critical mass for explosion is the same for all WDs, 
@@ -81,20 +82,32 @@
                     deviate from these standards. There are multiple ways in which these SNe differ from Type Ia SNe, 
                     and the mechanisms behind these divergences are generally poorly constrained. It is therefore 
                     important to improve our understanding of their explosion mechanism and the formation of their progenitors, 
-                    so that we can improve our accuracy when using Type Ia SNe for distance estimations.
+                    so that we can improve our accuracy when using Type Ia SNe for distance estimations. <br> <br>
+
+                    During my master thesis, I studied a subtype of Type Ia SNe called type Iax SNe. They are similar to Type Ia SNe
+                    but slightly differ in some aspects: most importantly they are less luminous and their spectral evolution differs
+                    in the later phases. A Type Iax SN is thought to originate from a Carbon Oxygen WD that accrete from a He star 
+                    companion, but their explosion mechanism is not well understood. The most common models argue that the thermonuclear 
+                    explosion of the WD fails, but other models completely diverge from the Type Ia explosion and include core 
+                    collapse of the progenitor. My <a download="" href="/assets/pdf/thesis.pdf">master thesis</a> actually focuses 
+                    on a specific Type Iax SN called SN 2014dt, which shows a peculiar excess in near to mid-IR bands. In this thesis, 
+                    I show that this excess is well reproduced by warm dust and I discuss the possible heating scenarios for the dust.
+                    However further study is needed to constrain this dust and conclude on the origin of this IR excess.
+
                 </div>
             </div>
 
             <!--================== OTHER PROJECTS ===============-->
             <h2 class="section__title">Other projects</h2>
             <div class="research__container container grid">
-                <div class="research__column">
-                    <a href="StellarCollisions.html" class="">
-                        <img src="assets/img/neutron.webp" alt="" class="research__img">
-                        <br> Stellar collisions
-                    </a>
-                </div>
                 <div class="research__row">
+                    <div class="research__column">
+                        <a href="StellarCollisions.html" class="">
+                            <img src="assets/img/neutron.webp" alt="" class="research__img">
+                            <br> Stellar collisions
+                        </a>
+                    </div>
+                
                     <div class="research__column">
                         <a href="CataclysmicVariables.html" class="">
                             <img src="assets/img/CV.jpg" alt="" class="research__img">
