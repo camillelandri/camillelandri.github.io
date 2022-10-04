@@ -157,6 +157,10 @@ img{
     text-align: center;
 }
 
+.links{
+    color: var(--title-color);
+}
+
 .links:hover{
     color: var(--first-color-alt);
 }
