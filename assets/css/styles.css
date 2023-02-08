@@ -7,10 +7,10 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 25; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 340; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: #15bec8;
+    --first-color: #A992FA;
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -67,14 +67,28 @@
     }
 }
 
+body{background-image: url("../img/5236169.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:     cover; 
+    background-position: center center;
+
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
     /* HSL color mode */
+    --first-color: #0ff;
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
     --body-color: hsl(var(--hue-color), 28%, 12%);
+    background-image: url("../img/outrun.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:     cover; 
+    background-position: center center;
     --container-color: hsl(var(--hue-color), 29%, 16%);
 }
 
@@ -278,18 +292,21 @@ img{
 /*==================== HOME ====================*/
 .home__container{
     gap: 1rem;
+    max-width: none;
+    text-align: center;
 }
 
 .home__content{
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
-    align-items: center;
 }
 
 .home__social{
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: 1;
     row-gap: 1rem ;
+    padding-top: 7rem;
+    height: 20rem;
 }
 
 .home__social-icon{
@@ -301,27 +318,36 @@ img{
     color: var(--first-color-alt);
 }
 
+.home__img{
+    grid-template-rows: 0.3fr .3fr .1fr;
+}
+
 .home__blob{
     width: 200px;
+    transform: scale(1.5) translateX(-2rem);
     fill: #070329;
     background-color: (0, 0, 0, 0);
 }
 
 .home__blob_shadow{
-    width: 0px;
-    height: 0px;
-    background-color: #0ff;
+    width: 200px;
+    height: 200px;
+    background-color: (0, 0, 0, 0);
     border-radius: 50%;
-    box-shadow: 100px 100px 80px 60px #0ff;
+    box-shadow: 100px 100px 80px 60px var(--first-color);
+    margin: 0 auto;
+    transform: scale(0.5);
 }
 
 .home__blob_contour{
-    width: 300px;
+    width: 200px;
     fill: var(--first-color);
+    
 }
 
 .home__blob-img{
-    width: 200px;
+    width: 190px;
+    margin: 0 auto;
 }
 
 .home__data{
@@ -350,18 +376,17 @@ img{
 }
 
 .home__scroll-button{
+    font-size: 5rem;
     color: var(--first-color);
     transition: .3s;
     padding-bottom: 5rem;
+    transform: translateX(-1rem) translateY(-2rem);
 }
 
 .home__scroll-button:hover{
-    transform: translateY(.25rem);
+    transform: translateX(-1rem) translateY(-1.25rem);
 }
 
-.home__scroll-mouse{
-    font-size: 2.5rem;
-}
 
 .home_scroll-name{
     font-size: var(--small-font-size);
@@ -787,7 +812,7 @@ img{
         width: 180px;
     }
     .home__blob_shadow{
-        box-shadow: 85px 85px 70px 60px #0ff;
+        box-shadow: 85px 85px 70px 60px var(--first-color);
     }
     
     .about__description{
@@ -818,14 +843,12 @@ img{
         width: 50%;
     }
     .home__content{
-        grid-template-columns: max-content 1fr 1fr;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
     }
     .home__data{
         grid-column: initial;
     }
     .home__img{
-        order: 1;
-        justify-self: left;
     }
     .home__scroll-button{
         margin-left: 3rem;
@@ -911,14 +934,13 @@ img{
 
     .home__content{
         padding-top: 5.5rem;
-        column-gap: 2rem;
     }
 
     .home__blob{
         width: 270px;
     }
     .home__blob_shadow{
-        box-shadow: 125px 125px 120px 80px #0ff;
+        box-shadow: -10px 30px 120px 80px var(--first-color);
     }
 
     .home__scroll{
@@ -982,11 +1004,11 @@ img{
         width: 320px;
     }
     .home__blob_shadow{
-        box-shadow: 150px 150px 140px 90px #0ff;
+        box-shadow: 10px 50px 140px 90px var(--first-color);
     }
 
     .home__social{
-        transform: translateX(-5rem);
+        row-gap: 0rem;
     }
 
     .about__buttons{
