@@ -10,21 +10,22 @@
     --hue-color: 340; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: #A992FA;
+    --first-color: #a957eb;
     --first-color-alt: #c5b7f6;
-    --second-color: #f8d300;
-    --second-color-alt: #e8d264;
-    --third-color: #FF9472;
-    --third-color-alt: #905644;
-    --fourth-color: #fa83a7;
-    --fourth-color-alt: #fdc7d772;
+    --second-color: #f00bd1;
+    --second-color-alt: #ffa8d4;
+    --third-color: #fbea2c;
+    --third-color-alt: #e4a566;
+    --fourth-color: #1fffff;
+    --fourth-color-alt: #0766666c;
+    --body-color: #0a0917;
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 85%);
+    --text-color-light: hsl(var(--hue-color), 8%, 75%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 25%);
-    --text-color-light: hsl(var(--hue-color), 8%, 45%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: #f8f4ef;
-    --container-color: #fff;
+
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -72,36 +73,14 @@
     }
 }
 
-body{background-image: url("../img/5236169.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:     cover; 
-    background-position: center center;
-
-}
-
-/*========== Variables Dark theme ==========*/
-body.dark-theme{
-    /* HSL color mode */
-    --first-color: #a957eb;
-    --first-color-alt: #c5b7f6;
-    --second-color: #f00bd1;
-    --second-color-alt: #ffa8d4;
-    --third-color: #fbea2c;
-    --third-color-alt: #e4a566;
-    --fourth-color: #1fffff;
-    --fourth-color-alt: #0766666c;
-    --body-color: #0a0917;
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 85%);
-    --text-color-light: hsl(var(--hue-color), 8%, 75%);
+body{
     background-image: url("../img/outrun.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:     cover; 
     background-position: center center;
-    --container-color: hsl(var(--hue-color), 29%, 16%);
 }
+
 
 /*========== Button Dark/Light ==========*/
 .nav__btns{
@@ -838,8 +817,7 @@ img{
     .home__data{
         grid-column: initial;
     }
-    .home__img{
-    }
+
     .home__scroll-button{
         margin-left: 3rem;
     }
