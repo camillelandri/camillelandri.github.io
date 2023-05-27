@@ -310,10 +310,11 @@ img{
 }
 
 .home__img{
-
+    padding-top: 10rem;
 }
 
 .home__blob{
+    
     width: 200px;
     transform: scale(2);
     fill: #d5b4f5;
@@ -344,6 +345,7 @@ img{
 
 .home__data{
     grid-column: 1/3;
+
     font-size: var(--h1-font-size);
 }
 
@@ -375,7 +377,7 @@ img{
 }
 
 .home__scroll-button:hover{
-    transform: translateX(-1.6rem) translateY(-1.25rem);
+    transform: translateY(-1.25rem);
 }
 
 
@@ -695,11 +697,11 @@ img{
 }
 
 .swiper-button-prev{
-    left: -.5rem;
+    left: .2rem;
 }
 
 .swiper-button-next{
-    right: -.5rem;
+    right: .2rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
@@ -1167,10 +1169,10 @@ img{
         font-size: 3.5rem;
     }
     .swiper-button-prev{
-        left: -3.5rem;
+        left: 0.8rem;
     }
     .swiper-button-next{
-        right: -3.5rem;
+        right: 0.8rem;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets{
         bottom: -4.5rem;
